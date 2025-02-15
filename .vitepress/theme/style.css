@@ -164,7 +164,7 @@ html,body {
   line-height: 1.6 !important; /* 行高适中，阅读舒适 */
   border: none;
   border-radius: 5px;
-  background: linear-gradient(270deg, #292d32, #bd34fe, #e43498);
+  background: linear-gradient(270deg, #00cff4, #bd34fe, #e43498);
   background-size: 600% 600%;
   animation: ripple-animation 3s infinite ease;
   cursor: pointer;
@@ -187,4 +187,8 @@ html,body {
 
 .timeline-dot {
   margin: 15px 0;
+}
+
+.VPImage.image-src {
+  border-radius: 50%;
 }

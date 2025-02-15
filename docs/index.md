@@ -5,8 +5,8 @@ hero:
   text: Record, Think, Summarize
   tagline: 
   image:
-    src: /logo.png
-    alt: VitePress Logo
+    src: /avatar.jpg
+    alt: my avatar
   actions:
     - theme: brand
       text: Start
