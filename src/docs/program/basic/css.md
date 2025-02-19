@@ -2,7 +2,7 @@
 
 ## 一、CSS基础
 **什么是CSS？**
-- CSS（<sapn class="marker-text">层叠样式表</sapn>）是一种用来表现HTML或XML等文件样式的计算机语言。通过CSS，可以控制网页的外观和格式，包括布局、颜色、字体等。
+- CSS（<span class="marker-text">层叠样式表</span>）是一种用来表现HTML或XML等文件样式的计算机语言。通过CSS，可以控制网页的外观和格式，包括布局、颜色、字体等。
 
 **如何引入CSS？**
 1. **内联样式**：直接在HTML元素中使用`style`属性。

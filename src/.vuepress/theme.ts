@@ -9,13 +9,14 @@ export default hopeTheme({
   author: {
     name: "LHN",
     url: "https://lhncxf.github.io",
+    email: 'kobeluhaonan@gmail.com'
   },
 
   logo: "/logo.png",
 
   repo: "lhncxf/lhncxf.github.io",
 
-  docsDir: "src",
+  docsDir: "src/docs",
 
   // 导航栏
   navbar,
@@ -39,14 +40,14 @@ export default hopeTheme({
       Dingding: "https://example.com",
       Discord: "https://example.com",
       Dribbble: "https://example.com",
-      Email: "mailto:info@example.com",
+      Email: "mailto:kobeluhaonan@163.com",
       Evernote: "https://example.com",
       Facebook: "https://example.com",
       Flipboard: "https://example.com",
       Gitee: "https://example.com",
       GitHub: "https://example.com",
       Gitlab: "https://example.com",
-      Gmail: "mailto:info@example.com",
+      Gmail: "mailto:kobeluhaonan@gmail.com",
       Instagram: "https://example.com",
       Lark: "https://example.com",
       Lines: "https://example.com",
@@ -63,22 +64,13 @@ export default hopeTheme({
       Weibo: "https://example.com",
       Whatsapp: "https://example.com",
       Youtube: "https://example.com",
-      Zhihu: "https://example.com",
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
-      },
+      Zhihu: "https://example.com"
     },
   },
 
   // 加密配置
   encrypt: {
-    config: {
-      "/demo/encrypt.html": {
-        hint: "Password: 1234",
-        password: "1234",
-      },
-    },
+    config: {},
   },
 
   // 多语言配置
@@ -92,18 +84,35 @@ export default hopeTheme({
   // 此处开启了很多功能用于演示，你应仅保留用到的功能。
   markdown: {
     align: true,
+    // 启用属性支持
     attrs: true,
+    // 启用代码块分组
     codeTabs: true,
+    // 启用组件快速使用
     component: true,
+    // 启用代码演示
     demo: true,
+    // 启用 figure
     figure: true,
-    gfm: true,
+    // 启用图片懒加载
     imgLazyload: true,
+    // 启用图片标记
+    imgMark: true,
+    // 启用图片大小
     imgSize: true,
+    // 启用gfm警告
+    alert: true,
+    // 启用gfm保证在站点和github上保持一致
+    gfm: true,
+    // 启用导入文件
     include: true,
+    // 启用标记
     mark: true,
     plantuml: true,
+    // 启用剧透模式
     spoiler: true,
+    // 启用脚注
+    footnote: true,
     stylize: [
       {
         matcher: "Recommended",
@@ -117,17 +126,21 @@ export default hopeTheme({
         },
       },
     ],
+    // 启用上下角标
     sub: true,
     sup: true,
+    // 启用选项卡
     tabs: true,
+    // 启用任务列表
     tasklist: true,
+    // 启用markdown v-pre
     vPre: true,
     // 思维导图 启用前安装 pnpm add -D markmap-lib markmap-toolbar markmap-view
     markmap: true,
     // https://theme-hope.vuejs.press/zh/guide/markdown/code/kotlin-playground.html
     // kotlinPlayground: true,
 
-    // 取消注释它们如果你需要 TeX 支持
+    // 启用数学公式，取消注释它们如果你需要 TeX 支持
     math: {
       // 启用前安装 katex
       type: "katex",
@@ -168,6 +181,10 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
+    // 全局搜索插件
+    slimsearch: true,
+    // 水印
+    watermark: false,
 
     // 启用之前需安装 @waline/client
     // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
@@ -177,7 +194,20 @@ export default hopeTheme({
     // },
 
     components: {
-      components: ["Badge", "VPCard"],
+      components: [
+        "ArtPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "PDF",
+        "Share",
+        "SiteInfo",
+        "StackBlitz",
+        "VPBanner",
+        "VPCard",
+        "VidStack",
+        "XiGua"
+      ],
     },
 
     icon: {
