@@ -3,3 +3,13 @@
   --vp-font: Atma, ZCOOL KuaiLe, Microsoft YaHei, sans-serif;
   --vp-font-heading: Atma, ZCOOL KuaiLe, Microsoft YaHei, sans-serif;
 }
+
+.full-screen-title {
+  display: block;
+  margin: 0;
+  padding: 0 0.25rem;
+  color: var(--vp-c-text-subtle);
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 2;
+}

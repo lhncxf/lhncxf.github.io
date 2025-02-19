@@ -11,6 +11,7 @@ export default hopeTheme({
     url: "https://lhncxf.github.io",
     email: 'kobeluhaonan@gmail.com'
   },
+  fullscreen: true,
 
   logo: "/logo.png",
 
@@ -185,6 +186,9 @@ export default hopeTheme({
     slimsearch: true,
     // 水印
     watermark: false,
+
+    // 禁用默认添加readme文档显示目录
+    catalog: false,
 
     // 启用之前需安装 @waline/client
     // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
