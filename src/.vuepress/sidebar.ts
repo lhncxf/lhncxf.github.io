@@ -5,5 +5,6 @@ export default sidebar({
     "/docs/posts/": 'structure',
     "/docs/reading/": 'structure',
     "/docs/diary/": 'structure',
-    "/docs/others/": 'structure'
+    "/docs/others/": 'structure',
+    "/docs/leetcode/": 'structure'
 });
