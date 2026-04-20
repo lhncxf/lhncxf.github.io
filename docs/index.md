@@ -2,25 +2,28 @@
 layout: home
 
 hero:
-  name: "架构与业务沉淀"
-  text: "前端工程化 · 业务架构 · 增长与运营"
-  tagline: "从底层技术到全链路业务架构的深度思考与实践复盘"
+  name: "全栈架构与业务洞察"
+  text: "Tech & Business Insights"
+  tagline: "致力于系统架构设计、复杂业务链路拆解与技术驱动的业务增长"
+  image:
+    src: /logo.png
+    alt: Logo
   actions:
     - theme: brand
-      text: 深入阅读
-      link: /02_技术与研发/
+      text: 探索技术架构
+      link: /技术与研发/
     - theme: alt
-      text: 探索开源
-      link: https://github.com/lhncxf
+      text: 查阅产品与运营
+      link: /产品与设计/
       
 features:
-  - title: 🛠️ 技术与研发
-    details: 涵盖前端工程化基石、V8底层原理、微前端隔离架构、Node.js BFF设计及高并发系统构建。
-    link: /02_技术与研发/
+  - title: 🛠️ 技术与架构
+    details: 涵盖大前端工程化基石、核心框架原理解析、微前端架构实践、Node.js服务端设计及高并发系统构建。
+    link: /技术与研发/
   - title: 📦 产品与设计
-    details: 聚焦电商模型解构（SKU/SPU）、交互边界心理学、低代码物料协议与B端核心架构底座。
-    link: /03_产品与设计/
-  - title: 📈 运营与营销
-    details: 探索 AARRR 增长极飞轮、埋点数据可视化、SEO与动态SSR渲染机制及数字化全景流转。
-    link: /04_运营与营销/
+    details: 聚焦电商模型解构（SKU/SPU）、交互边界心理学、低代码平台协议设计与B端业务架构底座。
+    link: /产品与设计/
+  - title: 📈 业务与运营
+    details: 探索 AARRR 增长极飞轮、埋点数据流转体系、全景数字化视图构建及SEO与动态渲染机制。
+    link: /运营与营销/
 ---
