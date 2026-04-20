@@ -60,7 +60,7 @@ function reactive(obj) {
 ```
 
 ## 🔖 三、 认知反转与横向对比 (Mental Shift & Comparison)
-*十年老炮视角的重新审视：原来所谓的好用，都在暗中标好了价格。*
+*十年专家视角的重新审视：原来所谓的好用，都在暗中标好了价格。*
 
 * **认知刷新**：以前总觉得 React 性能牛逼，后来才发现 React 默认的重渲染策略极其“笨重”（父组件更新，子组件不管有无变化统统执行一遍 Render）。如果不手动加 `React.memo` / `useMemo` / `useCallback`，性能其实是不如 Vue 的。Vue 的细粒度追踪让它天生具备了卓越的默认性能。
 * **React vs Vue 的终极 Trade-off**：

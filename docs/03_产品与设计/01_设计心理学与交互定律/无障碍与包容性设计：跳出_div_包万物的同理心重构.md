@@ -19,7 +19,7 @@
 
 ```javascript
 /**
- * 焦点锁定逻辑 (Focus Trap) - 老炮级纯 JS 方案
+ * 焦点锁定逻辑 (Focus Trap) - 专家级纯 JS 方案
  * 确保 Tab 键只在 Modal 内部循环
  */
 const handleFocusTrap = (e, modalElement) => {

@@ -1,9 +1,9 @@
 # 用户标签与画像系统：将用户视为多重状态的 Context 对象
 
-> **使用场景**：在构建现代 CDP (Customer Data Platform) 或精准营销系统时，将复杂的用户画像（User Profile）与标签（Tags）体系，抽象为前端工程师熟悉的“全局状态机”。通过类 React Context 的设计思想，实现行为触发状态更新、状态驱动 UI 差异化渲染的闭环。
+> **使用场景**：在构建现代 CDP (Customer Data Platform) 或精准营销系统时，将复杂的目标定位（User Profile）与标签（Tags）体系，抽象为前端工程师熟悉的“全局状态机”。通过类 React Context 的设计思想，实现行为触发状态更新、状态驱动 UI 差异化渲染的闭环。
 
 ## 1. 痛点与需求场景 (Context)
-*在传统的运营逻辑中，用户画像往往是后端数据库里的一堆冷冰冰的离线 T+1 标签。当前端需要根据这些标签做个性化呈现时，常面临以下困境：*
+*在传统的运营逻辑中，目标定位往往是后端数据库里的一堆冷冰冰的离线 T+1 标签。当前端需要根据这些标签做个性化呈现时，常面临以下困境：*
 
 * **原始痛点**：
     * **逻辑耦合严重**：业务代码中充斥着大量的 `if (user.tag === 'high_value')`，导致 UI 组件逻辑极其臃肿，难以维护。
@@ -60,7 +60,7 @@ export function useUserPersona<T>(selector: (state: UserContextState) => T): T {
  * 业务组件调用示例：极致的解耦
  */
 const DiscountBanner = () => {
-  // 10年前端老炮的做法：关注点分离
+  // 系统架构师的做法：关注点分离
   // 只订阅“价格敏感度”和“实验分组”，UI 随状态自动 Re-render
   const isPriceSensitive = useUserPersona(s => s.tags.price_sensitivity > 0.8);
   const isInExperiment = useUserPersona(s => s.segments.includes('2024_spring_sale_v2'));
@@ -84,6 +84,6 @@ tracker.use(async (event, next) => {
 
 ## 4. 边界情况与避坑补充 (Edge Cases & Gotchas)
 * **状态覆盖风险 (Race Conditions)**：实时上报的埋点更新与服务端异步下发的标签可能存在时序冲突。**最佳实践**：给每个状态位打上 `version` 或 `timestamp`，遵循“最后一次写入生效”或“服务端权重优先”策略。
-* **内存与性能限制**：全量用户画像可能非常庞大（包含成百上千个标签）。**避坑指南**：前端 Context 只应挂载“当前生命周期内影响 UI 判断”的活跃标签，非活跃标签采用按需懒加载。
+* **内存与性能限制**：全量目标定位可能非常庞大（包含成百上千个标签）。**避坑指南**：前端 Context 只应挂载“当前生命周期内影响 UI 判断”的活跃标签，非活跃标签采用按需懒加载。
 * **隐私与脱敏**：Context 对象在前端是透明的，严禁将身份证号、手机号等 PII (Personally Identifiable Information) 数据放入标签体系中。
 * **SSR 注入**：对于 Next.js/Nuxt 等场景，务必在 `getServerSideProps` 中将 CDP 的初识状态注入，避免 Client-side Hydration 导致页面闪烁。

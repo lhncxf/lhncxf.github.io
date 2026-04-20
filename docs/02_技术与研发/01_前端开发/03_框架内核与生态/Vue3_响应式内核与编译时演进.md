@@ -71,7 +71,7 @@ function reactive(obj) {
 * **横向对比：Vue3 vs React (Concurrent Mode)**：
     * **Vue3 (Push)**：精确更新。数据变了，Vue 知道具体哪个组件、哪个节点要变。
     * **React (Pull)**：粗放更新。状态变了，全量重新执行 Render 函数，靠 Fiber 调度（时间分片）来掩盖计算开销。
-    * **老炮思考**：Vue3 适合极致的单点更新性能，React 适合极其复杂、计算量大的 UI 调度。
+    * **专家思考**：Vue3 适合极致的单点更新性能，React 适合极其复杂、计算量大的 UI 调度。
 
 ## 4. 业务投影与延伸思考 (Extension)
 

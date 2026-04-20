@@ -61,5 +61,5 @@ document.querySelector('#complete-first-task').addEventListener('click', () => {
 ## 4. 边界情况与避坑补充 (Edge Cases & Gotchas)
 
 *   **虚假激活（Ghost Activation）**：用户虽然触发了动作，但并未真正停留。这就像 Lighthouse 分数很高但实际用户卡顿一样。需要引入 **LCP (Long-term Retention Correlation)** 进行多维校验。
-*   **魔法数字的样本偏差**：Facebook 著名的“7天10个好友”是统计学结论。对于前端老炮来说，不要过度迷信单一数字，要像排查堆栈溢出一样，通过 A/B Test 观察不同路径下的**留存梯度（Retention Gradient）**。
+*   **魔法数字的样本偏差**：Facebook 著名的“7天10个好友”是统计学结论。对于前端专家来说，不要过度迷信单一数字，要像排查堆栈溢出一样，通过 A/B Test 观察不同路径下的**留存梯度（Retention Gradient）**。
 *   **性能代偿**：如果为了缩短激活路径而导致技术债堆积（如过度依赖 LocalStorage 导致的状态同步异常），需要设置**状态回滚机制（Fallback Strategy）**。

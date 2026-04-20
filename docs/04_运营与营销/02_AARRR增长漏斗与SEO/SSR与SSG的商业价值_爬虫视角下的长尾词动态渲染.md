@@ -1,6 +1,6 @@
 # 技术溯源与认知重塑 [探究 SSR 与 SSG 的商业价值：爬虫视角下的长尾词动态渲染]
 
-> **使用场景**：从 10 年前端老炮视角，拆解现代渲染架构（Next.js 生态）如何直接影响 AARRR 模型中的“获客”阶段。重点在于透视 Google 爬虫（Googlebot）与 unhydrated HTML 之间的博弈，重塑对 SEO 增长的底层认知。
+> **使用场景**：从 10 年前端专家视角，拆解现代渲染架构（Next.js 生态）如何直接影响 AARRR 模型中的“获客”阶段。重点在于透视 Google 爬虫（Googlebot）与 unhydrated HTML 之间的博弈，重塑对 SEO 增长的底层认知。
 
 ## 1. 探究动机 (Why Now?)
 

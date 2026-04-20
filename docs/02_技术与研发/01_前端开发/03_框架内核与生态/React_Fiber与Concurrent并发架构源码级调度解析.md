@@ -96,5 +96,5 @@ React 的更新分为两个阶段：
 - `useLayoutEffect` 是在 Commit 阶段同步执行的，会阻塞渲染。
 如果是修改 DOM 导致闪烁的问题，必须用 `useLayoutEffect`；如果是请求数据或打点，坚持用 `useEffect`。
 
-## 总结：老炮的个人反思
+## 总结：专家的个人反思
 以前我们做优化是靠“减少渲染”，比如写各种 `shouldComponentUpdate`。现在 React 的思路是“不怕你渲染，但我要管好渲染的节奏”。从控制逻辑的颗粒度来看，Fiber 把 React 从一个 UI 库变成了一个具备任务调度能力的微型操作系统。

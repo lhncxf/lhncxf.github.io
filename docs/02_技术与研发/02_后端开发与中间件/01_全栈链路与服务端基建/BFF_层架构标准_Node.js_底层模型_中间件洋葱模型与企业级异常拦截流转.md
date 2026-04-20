@@ -69,7 +69,7 @@ app.use(async (ctx) => {
 ```
 
 ## 🔖 三、 认知反转与横向对比 (Mental Shift & Comparison)
-*十年老炮视角的重新审视：不写后端的全栈，不是好架构师。*
+*十年专家视角的重新审视：不写后端的全栈，不是好架构师。*
 
 *   **对“异常”的认知反转**：以前写纯前端，接口报错顶多就是弹个 Toast 提示用户网络错误。写了 BFF 之后才明白，任何一个 `Unhandled Rejection` 都可能让 Node.js 进程瞬间崩溃重启（且默认不带任何日志堆栈）。后端代码的每一层 `try/catch` 和 `process.on('uncaughtException')` 都是保命的降落伞，敬畏线上环境的任何一丝不可控波动。
 *   **BFF 的存在边界与 Trade-off**：

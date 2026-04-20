@@ -10,7 +10,7 @@
 ## 2. 核心机制解构 (Mental Model)
 
 ### 2.1 基础指标的底层映射
-从前端老炮视角看，所谓的指标不过是网络请求与本地存储的变体：
+从前端专家视角看，所谓的指标不过是网络请求与本地存储的变体：
 * **PV (Page View)**：本质是路由切换（SPA 中的 `hashchange` 或 `popstate`）触发的特定埋点请求。
 * **UV (Unique Visitor)**：过去靠 Cookie，现在更多靠持久化的 `localStorage` 唯一标识或 Canvas 指纹。
 * **DAU/MAU**：聚合后的结果。在前端看来，就是当天/当月内至少有一次携带有效 JWT Token 的活跃 Session。

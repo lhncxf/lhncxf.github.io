@@ -22,7 +22,7 @@
 
 ```javascript
 // JWT 的结构就是：Header.Payload.Signature
-// 老炮提醒：千万别在 Payload 里放敏感信息（如密码），那是 base64 明文！
+// 专家提醒：千万别在 Payload 里放敏感信息（如密码），那是 base64 明文！
 const jwt = require('jsonwebtoken');
 
 // 后端验证逻辑极简版

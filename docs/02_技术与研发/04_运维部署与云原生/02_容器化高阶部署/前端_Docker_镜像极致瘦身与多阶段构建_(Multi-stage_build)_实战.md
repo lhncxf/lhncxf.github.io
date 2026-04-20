@@ -20,7 +20,7 @@
     * **Build 阶段**：用 `node:alpine` 搞定构建。
     * **Run 阶段**：用 `nginx:alpine` 承载产物。
     * **战果**：镜像体积从 `node:latest` 的 1GB 直接压到 `nginx:alpine` 的 10MB 出头。
-* **.dockerignore 优先级**：老炮的第一步不是写 Dockerfile，而是写 `.dockerignore`。
+* **.dockerignore 优先级**：专家的第一步不是写 Dockerfile，而是写 `.dockerignore`。
     * 必须剔除：`.git`, `node_modules`, `dist`, `*.log`, `.vscode`。
     * 理由：减少 build context 大小，加快文件传输到 Docker Daemon 的速度。
 
@@ -54,7 +54,7 @@ CI 构建慢，80% 是因为缓存没用好。Docker 是按层缓存的，如果
    * **手段**：通过 `volumes` 挂载一个 `config.js` 到 `index.html` 前面。
    * **优点**：解耦。
    * **缺点**：需要改代码逻辑，增加请求开销或全局变量污染。
-3. **老炮终极方案：运行时替换 (Entrypoint Template)**：
+3. **专家终极方案：运行时替换 (Entrypoint Template)**：
    * **手段**：代码中预留占位符（如 `__VITE_API_URL_PLACEHOLDER__`），在 Nginx 启动前利用 `envsubst` 批量替换静态文件中的字符串。
    * **脚本示例**：
      ```bash
