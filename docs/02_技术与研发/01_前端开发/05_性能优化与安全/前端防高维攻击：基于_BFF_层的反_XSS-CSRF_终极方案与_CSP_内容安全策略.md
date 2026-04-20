@@ -4,7 +4,7 @@
 
 ## 1. 痛点与需求场景 (Context)
 * **原始痛点**：
-  - **XSS 漏网之鱼**：虽然 Vue/React 默认转义了数据绑定（`{{}}`），但如果使用了 `v-html`、`dangerouslySetInnerHTML`、或者在富文本编辑器中直接渲染后端返回的脏数据，很容易被注入 `<script>恶意代码</script>`，导致用户 Cookie 被窃取。
+  - **XSS 漏网之鱼**：虽然 Vue/React 默认转义了数据绑定（`\{\{\}\}`），但如果使用了 `v-html`、`dangerouslySetInnerHTML`、或者在富文本编辑器中直接渲染后端返回的脏数据，很容易被注入 `<script>恶意代码</script>`，导致用户 Cookie 被窃取。
   - **CSRF 钓鱼攻击**：用户的登录态（Cookie）在浏览器中。黑客诱导用户点击钓鱼网站上的一个按钮，该按钮暗中往真正的银行接口发送了转账 POST 请求（浏览器会自动带上银行的 Cookie），导致资金被盗。
 * **预期目标**：
   - **XSS 防御**：BFF 层对所有入参/出参进行 DOMPurify 净化；前端配置强 CSP 策略。
