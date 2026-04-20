@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "架构与业务视界",
-  description: "从底层技术演进到商业链路增长",
+  title: "极客域",
+  description: "构建健壮系统，驱动产品增长",
   head: [['link', { rel: 'icon', href: '/logo.png' }]],
   lastUpdated: true,
   ignoreDeadLinks: true,

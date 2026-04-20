@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: "架构与业务视界"
-  text: "Tech, Product & Operations"
-  tagline: "深度解构前端工程体系、服务端高并发架构与数字商业增长模型"
+  name: "前端视界"
+  text: "Code · Product · Growth"
+  tagline: "构建健壮系统，驱动产品增长"
   image:
     src: /logo.png
     alt: Logo
