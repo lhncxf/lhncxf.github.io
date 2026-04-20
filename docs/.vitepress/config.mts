@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "全栈架构与业务洞察",
-  description: "深度技术探索 · 复杂业务架构 · 增长与运营",
+  title: "架构与业务视界",
+  description: "从底层技术演进到商业链路增长",
   head: [['link', { rel: 'icon', href: '/logo.png' }]],
   lastUpdated: true,
   ignoreDeadLinks: true,

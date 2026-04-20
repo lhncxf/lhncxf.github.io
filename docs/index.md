@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: "全栈架构与业务洞察"
-  text: "Tech & Business Insights"
-  tagline: "致力于系统架构设计、复杂业务链路拆解与技术驱动的业务增长"
+  name: "架构与业务视界"
+  text: "Tech, Product & Operations"
+  tagline: "深度解构前端工程体系、服务端高并发架构与数字商业增长模型"
   image:
     src: /logo.png
     alt: Logo
