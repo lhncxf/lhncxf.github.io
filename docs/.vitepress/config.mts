@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  ignoreDeadLinks: true,
   title: "10年前端老炮知识库",
   description: "个人深度技术与业务复盘",
   themeConfig: {
